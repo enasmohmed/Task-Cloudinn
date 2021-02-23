@@ -1,0 +1,9 @@
+{% block body %}
+<h2><a href="/">Home</a></h2>
+{% for data in alldata %}
+ID: {{ data.id }}<br/><br>
+Name: {{ data.name }}<br><br>
+Age: {{ data.age }}<br><br><hr>
+{% endfor %}
+
+{% endblock %}

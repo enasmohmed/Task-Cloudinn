@@ -1,0 +1,20 @@
+{% block body %}
+
+<!-- <h2>All Data</h2> -->
+<h2><a href="{% url 'Empires:all_data' %}">All Data</a><br></h2>
+<br/> 
+
+ <!-- Search Start -->
+ <div class="mm-search">
+    <form id="mob-search" name="search" action="{% url 'Empires:search' %}" method="GET" value="{{request.GET.q}">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <input type="text" class="form-control simple" name="q"  value="{{ request.GET.q }}" placeholder="Search ..." >
+          <button class="btn btn-default" type="submit" title="Search" id="submit-button">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+<!-- End Search -->
+
+{% endblock %}

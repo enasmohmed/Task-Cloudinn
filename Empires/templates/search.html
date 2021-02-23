@@ -1,0 +1,9 @@
+{% block body %}
+<h2 class="text-center">Research Results</h2>
+    {% for search in data %}
+        ID: {{ search.id }}<br/><br>
+        Name: {{ search.name }}<br><br>
+        Age: {{ search.age }}<br><br>
+        Description: {{ search.description }}<br><br>
+    {% endfor %}
+{% endblock %}
