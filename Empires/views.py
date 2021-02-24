@@ -35,7 +35,7 @@ def search(request):
             data = fetch_data()
             context = {'query': q,
                 'data': data}
-            
+
     return render(request, template, context) # return empty template
 
 
