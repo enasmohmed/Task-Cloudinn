@@ -9,7 +9,7 @@ from .views import EmpriesViewSet
 app_name = 'Empires'
 
 router = routers.DefaultRouter()
-router.register('data-api', EmpriesViewSet)
+router.register('data_api', EmpriesViewSet)
 
 
 urlpatterns = [

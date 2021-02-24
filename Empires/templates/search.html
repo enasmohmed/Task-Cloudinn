@@ -1,9 +1,14 @@
 {% block body %}
+<h2><a href="/">Home</a></h2>
 <h2 class="text-center">Research Results</h2>
+{% if data %}
     {% for search in data %}
         ID: {{ search.id }}<br/><br>
         Name: {{ search.name }}<br><br>
         Age: {{ search.age }}<br><br>
         Description: {{ search.description }}<br><br>
     {% endfor %}
+{% else %}
+    <p> No results match your search</p>
+{% endif %}    
 {% endblock %}
