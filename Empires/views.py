@@ -42,7 +42,7 @@ def search(request):
 def fetch_data():
     attempt_num = 0
     while attempt_num < MAX_RETRIES :
-        r = request.get("https://age-of-empires-2-api.herokuapp.com/docs/", timeout=10)
+        r = request.get("https://tasks.cloudinn.net/docs/", timeout=10)
         if r.status_code == 200:
             data = r.json()
             return data
